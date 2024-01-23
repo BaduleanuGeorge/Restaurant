@@ -51,11 +51,6 @@ function Navbar() {
             About us
           </Link>
         </li>
-        <li>
-          <Link to="/contact" onClick={toggleMenu}>
-            Contact us
-          </Link>
-        </li>
         <Link to="/reservation">
           <button
             className="text-white flex justify-center items-center gap-2 py-3 px-6 bg-[#c1121f] 
@@ -82,9 +77,6 @@ function Navbar() {
             </li>
             <li>
               <Link to="/about">About us</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact us</Link>
             </li>
           </ul>
         </div>

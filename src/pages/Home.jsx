@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Hero from "../components/Hero";
 import AboutImage from "../assets/AboutImage.jpg";
 import ItalianFood from "../assets/ItalianFood.jpg";
@@ -10,6 +10,10 @@ import { Link } from "react-router-dom";
 import CTAComponent from "../components/CTAComponent";
 
 function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <Hero />

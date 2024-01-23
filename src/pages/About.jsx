@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import RestaurantExterior from "../assets/RestaurantExt.jpg";
 import TeamImage from "../assets/TeamImage.jpg";
 import { BsArrowRight } from "react-icons/bs";
@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 import CTAComponent from "../components/CTAComponent";
 
 function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="w-full h-auto">
       {/* TOP BANNER */}

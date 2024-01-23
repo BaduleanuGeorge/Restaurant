@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import MenuItemComp from "../components/MenuItemComp";
 import MenuFood1 from "../assets/MenuFood1.jpg";
 import MenuFood2 from "../assets/MenuFood2.jpg";
@@ -8,6 +8,10 @@ import { Link } from "react-router-dom";
 import CTAComponent from "../components/CTAComponent";
 
 function Menu() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="w-full h-auto">
       {/* TOP BANNER */}
