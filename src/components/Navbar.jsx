@@ -12,6 +12,10 @@ function Navbar() {
     setShowMenu(!showMenu);
   };
 
+  const closeMenu = () => {
+    setShowMenu(false);
+  };
+
   return (
     <div className="max-w-7xl mx-auto h-[100px] flex justify-between items-center p-3">
       {/* LOGO */}
@@ -32,7 +36,7 @@ function Navbar() {
 
       {/* MOBILE MENU */}
       <ul
-        className={`fixed top-0 right-0 w-[350px] md:w-[400px] h-screen bg-[#023047] text-white flex flex-col items-center justify-evenly text-lg transform ${
+        className={`fixed top-0 right-0 w-[350px] md:w-[400px] h-screen bg-black text-white flex flex-col items-center justify-evenly text-lg transform ${
           showMenu ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >
@@ -55,6 +59,7 @@ function Navbar() {
           <button
             className="text-white flex justify-center items-center gap-2 py-3 px-6 bg-[#c1121f] 
             rounded-lg hover:bg-[#ff0011] duration-300 mt-4 ml-6"
+            onClick={closeMenu}
           >
             Book Now
           </button>
